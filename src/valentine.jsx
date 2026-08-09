@@ -61,7 +61,7 @@ export default function Valentine(props) {
   });
 
   return (
-    <mesh ref={heartRef} geometry={heartGeometry}>
+    <mesh ref={heartRef} geometry={heartGeometry} position={props.offset}>
       <meshStandardMaterial
         color={props.color}
         metalness={0.5}
